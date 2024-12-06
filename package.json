@@ -1,0 +1,16 @@
+{
+  "name": "interview-cake-weekly-problem-533-milliongazillion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-json-reporter": "^1.2.2",
+    "jest-stare": "^2.5.2"
+  }
+}
