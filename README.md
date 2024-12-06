@@ -60,3 +60,17 @@ npm install --save-dev jest-json-reporter
 ```Bash
 npm run prettyPrintJson
 ```
+## Conclusion
+The BloomFilter implementation trims down the most amount of space taken up by visited URLs due to using a fixed-size bit array and multiple hash functions to probabilistically determine if an element is in the set, which is much more space-efficient compared to storing the entire set of visited URLs as hashes in a Set.
+
+HashCrawler:
+- Stores each visited URL as a SHA-256 hash (256 bits or 32 bytes per URL).
+Memory usage grows linearly with the number of visited URLs.
+
+BloomFilter:
+- Uses a fixed-size bit array (e.g., 1000 bits).
+- Uses two hash functions to set bits in the array.
+- Memory usage is constant, regardless of the number of visited URLs.
+- There is a small probability of false positives, but it significantly reduces memory usage.
+
+Another options is using physical storage for the visited URLs.
