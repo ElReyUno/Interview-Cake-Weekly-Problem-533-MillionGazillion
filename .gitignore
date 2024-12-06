@@ -2,3 +2,5 @@ node_modules/
 package-lock.json
 .env
 .gitattributes
+test-results/jest-results.json
+test-results/index.html
