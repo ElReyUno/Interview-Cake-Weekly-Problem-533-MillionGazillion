@@ -8,6 +8,7 @@ module.exports = {
         }],
         ["jest-json-reporter", {
             "outputPath": "test-results.json"
-        }]
+        }],
+        "<rootDir>/node_modules/jest-json-reporter"
     ]
 };
